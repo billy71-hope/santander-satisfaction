@@ -1,0 +1,12 @@
+# Données : jamais versionnées (train.csv, a_decider.csv, verite.csv…)
+*.csv
+data/*
+!data/.gitkeep
+sorties/*
+!sorties/.gitkeep
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

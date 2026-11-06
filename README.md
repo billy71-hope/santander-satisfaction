@@ -17,6 +17,30 @@ pip install -r requirements.txt
 Placer `train.csv` et `a_decider.csv` (Drive du cours, dossier `Sujet_05_Santander_Satisfaction/`) dans `data/`.
 **Les données ne sont pas versionnées** (`*.csv` ignoré).
 
+## Déposer des fichiers
+
+**Depuis le site GitHub** (le plus simple) : ouvrir le dossier voulu → **Add file → Upload files** → glisser les fichiers → **Commit changes**.
+
+**Depuis son ordinateur, avec git :**
+
+```bash
+# une seule fois
+git clone https://github.com/billy71-hope/santander-satisfaction.git
+cd santander-satisfaction
+git config user.name "votre-login-github"
+git config user.email "votre-email-github"
+
+# à chaque fois
+git pull                      # récupérer le travail des autres d'abord
+git add <fichiers>
+git commit -m "ce que j'ai fait"
+git push
+```
+
+Si `git push` demande un mot de passe : utiliser `gh auth login` (GitHub CLI) ou un *personal access token*, pas le mot de passe du compte.
+
+**Ne jamais déposer les `.csv`** (données du cours) : ils restent dans `data/` sur chaque machine.
+
 ## Structure
 
 | Dossier | Contenu |

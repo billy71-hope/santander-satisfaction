@@ -14,8 +14,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Placer `train.csv` et `a_decider.csv` (Drive du cours, dossier `Sujet_05_Santander_Satisfaction/`) dans `data/`.
-**Les données ne sont pas versionnées** (`*.csv` ignoré).
+`train.csv` et `a_decider.csv` sont dans `data/` : un `git pull` suffit pour les récupérer.
+Les autres `.csv` (sorties, `verite.csv`) ne sont pas versionnés.
 
 ## Déposer des fichiers
 
@@ -39,13 +39,13 @@ git push
 
 Si `git push` demande un mot de passe : utiliser `gh auth login` (GitHub CLI) ou un *personal access token*, pas le mot de passe du compte.
 
-**Ne jamais déposer les `.csv`** (données du cours) : ils restent dans `data/` sur chaque machine.
+**Ne pas déposer d'autres `.csv`** que ces deux tables (sorties, `verite.csv`).
 
 ## Structure
 
 | Dossier | Contenu |
 |---|---|
-| `data/` | données du cours (non versionnées) |
+| `data/` | `train.csv` et `a_decider.csv` (versionnés) |
 | `carnets/` | carnet de démarrage |
 | `docs/` | énoncé, note de 3 pages, model card, fiche de données |
 | `sorties/` | prédictions `ID,TARGET` (non versionnées) |

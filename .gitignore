@@ -1,7 +1,9 @@
-# Données : jamais versionnées (train.csv, a_decider.csv, verite.csv…)
+# Données : jamais versionnées (verite.csv, sorties…), sauf les deux tables du sujet
 *.csv
 data/*
 !data/.gitkeep
+!data/train.csv
+!data/a_decider.csv
 sorties/*
 !sorties/.gitkeep
 

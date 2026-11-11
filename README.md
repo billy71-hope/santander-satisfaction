@@ -49,6 +49,10 @@ Si `git push` demande un mot de passe : utiliser `gh auth login` (GitHub CLI) ou
 | `carnets/` | carnet de démarrage |
 | `docs/` | énoncé, note de 3 pages, model card, fiche de données |
 | `sorties/` | prédictions `ID,TARGET` (non versionnées) |
+| `P1_Alvine/` | travail de P1 — Alvine |
+| `P2_Albert/` | travail de P2 — Albert Hounkpe |
+| `P3_Hope/` | travail de P3 — Hope Silas |
+| `P4_Yoann/` | travail de P4 — Yoann Tossa |
 
 ## Livrables
 

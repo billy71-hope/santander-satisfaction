@@ -1,6 +1,6 @@
 # P3 — Trous, cardinalité, cibles
 
-Enchaînement : **1.6 Trous → 1.4 Cardinalité (après 1.3 Typer) → 1.9 Cibles**. Généré par `python p3_trous_cardinalite_cibles.py` le 2026-11-09 09:47, sur `train.csv` (60 816 lignes) et `a_decider.csv` (15 204 lignes), tables entières.
+Enchaînement : **1.6 Trous → 1.4 Cardinalité (après 1.3 Typer) → 1.9 Cibles**. Généré par `python P3_Hope/p3_trous_cardinalite_cibles.py` le 2026-11-09 09:47, sur `train.csv` (60 816 lignes) et `a_decider.csv` (15 204 lignes), tables entières.
 
 ## Les décisions, en une page
 

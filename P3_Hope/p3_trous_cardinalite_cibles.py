@@ -3,9 +3,11 @@
 Mesure, puis décide. Chaque décision est écrite avec le chiffre qui la justifie.
 
 Usage :
-    python p3_trous_cardinalite_cibles.py      # -> docs/P3_trous_cardinalite_cibles.md
+    python P3_Hope/p3_trous_cardinalite_cibles.py      # -> P3_Hope/P3_trous_cardinalite_cibles.md
 """
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -13,10 +15,11 @@ from scipy.stats import binomtest
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import KFold
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from audit_phase1 import (CIBLE, GRAINE, ID, PLANCHER, RACINE, a_decider, decoupage, famille,
                           pct, regle_metier, tableau, train, variables)
 
-RAPPORT = RACINE / "docs" / "P3_trous_cardinalite_cibles.md"
+RAPPORT = RACINE / "P3_Hope" / "P3_trous_cardinalite_cibles.md"
 DELTA_INFINI = 9999999999     # code des colonnes delta_ : variation depuis une base nulle
 VAR3_MANQUANT = -999999
 VAR36_CODE = 99
